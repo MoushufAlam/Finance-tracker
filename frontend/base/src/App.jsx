@@ -6,11 +6,14 @@ import {
   Navigate,
 } from "react-router-dom"
 
-import Login from "./pages/Auth/Login"
-import SignUp from "./pages/Auth/SignUp"
+import LoginForm from "./pages/Auth/LoginForm"
+import SignUpForm from "./pages/Auth/SignUpForm"
 import Home from "./pages/Dashboard/Home"
-import Income from "./pages/Dashboard/Income"
-import Expense from "./pages/Dashboard/Expense"
+import CreatePoll from './pages/Dashboard/CreatePoll'
+import MyPolls from './pages/Dashboard/MyPolls'
+import VotedPolls from './pages/Dashboard/VotedPolls'
+import Bookmarks from './pages/Dashboard/Bookmarks'
+
 
 function App() {
 
@@ -19,11 +22,13 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element = {<Root/>} />
-          <Route path="/login" exact element = {<Login/>} />
-          <Route path="/signUp" exact element = {<SignUp/>} />
+          <Route path="/login" exact element = {<LoginForm/>} />
+          <Route path="/signUp" exact element = {<SignUpForm/>} />
           <Route path="/dashboard" exact element = {<Home/>} />
-          <Route path="/income" exact element = {<Income/>} />
-          <Route path="/expense" exact element = {<Expense/>} />
+          <Route path="/create-poll" exact element = {<CreatePoll/>} />
+          <Route path="/my-polls" exact element = {<MyPolls/>} />
+          <Route path="/voted-polls" exact element = {<VotedPolls/>} />
+          <Route path="/bookmarks" exact element = {<Bookmarks/>} />
         </Routes>
       </Router>
     </>

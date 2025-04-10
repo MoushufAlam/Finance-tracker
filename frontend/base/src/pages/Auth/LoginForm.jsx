@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Expense() {
+function LoginForm() {
   return (
     <div>
-      Expense
+      LoginForm
     </div>
   )
 }
 
-export default Expense
+export default LoginForm

@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Income() {
+function Bookmarks() {
   return (
     <div>
-      Income
+      Bookmarks
     </div>
   )
 }
 
-export default Income
+export default Bookmarks
