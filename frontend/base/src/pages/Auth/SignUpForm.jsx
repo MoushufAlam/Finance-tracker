@@ -1,8 +1,6 @@
 import React ,{useState} from 'react'
 import AuthLayout from '../../components/layout/AuthLayout'
 import {useNavigate} from 'react-router-dom'
-import ProfilePhotoSelector from '../../components/input/ProfilePhotoSelector'
-
 
 function SignUpForm() {
 
